@@ -1,0 +1,24 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently 'npm:mongoDB' 'npm:dev'",
+    "dev": "node dev.js",
+    "devm": "MONGODB_URL=mongodb+srv://readytolive:DOKerVwhEkQ4J2V2@readytoliveapp.kkjqa.mongodb.net/ReadyToMoveProd node dev.js",
+    "mongoDB": "docker run -p 27017:27017 mongo"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-serverless-express": "^3.3.8",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.2",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
