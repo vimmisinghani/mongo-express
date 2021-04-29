@@ -1,7 +1,6 @@
 const app = require("./app");
 const { connect } = require("./mongoose");
-var cors = require('cors')
-app.use(cors())
+
 
 connect();
 

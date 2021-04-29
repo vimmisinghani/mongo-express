@@ -2,12 +2,9 @@
   "name": "example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dev.js",
   "scripts": {
-    "start": "concurrently 'npm:mongoDB' 'npm:dev'",
-    "dev": "node dev.js",
-    "devm": "MONGODB_URL=mongodb+srv://readytolive:DOKerVwhEkQ4J2V2@readytoliveapp.kkjqa.mongodb.net/ReadyToMoveProd node dev.js",
-    "mongoDB": "docker run -p 27017:27017 mongo"
+    "dev": "node dev.js"
   },
   "author": "",
   "license": "ISC",

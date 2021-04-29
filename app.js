@@ -4,7 +4,10 @@ const app = express();
 var request = require('request');
 var fs = require('fs');
 
+
 app.use(express.urlencoded({ extended: false }));
+var cors = require('cors')
+app.use(cors())
 
 /*
 curl -X POST \
